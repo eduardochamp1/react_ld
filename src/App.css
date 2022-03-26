@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.main {
+  padding: 40px 0;
+  width: 100%;
+  background-color: blueviolet;
+  background-image: url(https://cursos.dankicode.com/app/Views/public/images/home/banner-home.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu h3 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.menu a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 3px 8px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  max-width: 600px;
+  margin: 10px auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form h2 {
+  color: white;
+  text-transform: uppercase;
+
+}
+
+.items-form {
+  margin: 0 auto;
+  max-width: 540px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  
+  flex-wrap: wrap;
+}
+
+.items-form input[type="text"] {
+  width: 48%;
+  height: 30px;
+  margin: 8px 0px;
+}
+
+.items-form input[type=submit]{
+  width: 100%;
+  height: 40px;
+  background-color: #e7426b;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
 }
